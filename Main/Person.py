@@ -17,6 +17,10 @@ class Person:
         self.zip = input('Enter zip code: ')
         self.phoneNumber = input('Enter phone number: ')
 
-    # get data function. Prints data in one line as specified by project requirements.
+    # display data function. Prints data in one line as specified by project requirements.
+    def showData(self):
+        print(self.getData())
+
+    # get data function. returns a string with all the data on one line. Included to improve modularity of the class
     def getData(self):
-        print(f'First name: {self.firstName}, Last name: {self.lastName}, address: {self.address}, Zip code: {self.zip}, Phone number: {self.phoneNumber}')
+        return f'First name: {self.firstName}, Last name: {self.lastName}, address: {self.address}, Zip code: {self.zip}, Phone number: {self.phoneNumber}'
