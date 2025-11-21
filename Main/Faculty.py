@@ -10,7 +10,7 @@ class Faculty(CollegeEmployee):
 
     # set data function. extends parent method
     def setData(self):
-        # call to parent constructor
+        # call to parent method
         super().setData()
         # while loop to ensure valid data is entered for isTenured value
         while 1:
