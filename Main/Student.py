@@ -25,6 +25,6 @@ class Student(Person):
 
     # get data function. Overrides parent method
     def getData(self):
-        return f'{super().setData()}, Major: {self.major}, GPA: {self.gpa}'
+        return f'{super().getData()}, Major: {self.major}, GPA: {self.gpa}'
 
     # showData method override not required. Parent method calls the overridden getData function
