@@ -29,4 +29,6 @@ class CollegeEmployee(Person):
     # get data function. overrides parent method
     def getData(self):
         # overridden print statement to include new data.
-        print(f'First name: {self.firstName}, Last name: {self.lastName}, Address: {self.address}, Zip code: {self.zip}, Phone number: {self.phoneNumber}, Social security number: {self.ssn}, Annual salary: ${self.pay:.2f}, Department name: {self.dept}')
+        return f'{super().getData()}, Social security number: {self.ssn}, Annual salary: ${self.pay:.2f}, Department name: {self.dept}'  # super().getData() used to prepend the inherited data to the new data
+
+    # override to showData is not required as it calls getData(), which has already been overridden to include the new information.
